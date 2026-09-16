@@ -8,10 +8,10 @@ CREATE TABLE customerss (
     address VARCHAR(255) NOT NULL
 );
 
--- Unique Index cho email
+
 CREATE UNIQUE INDEX idx_customers_email
 ON customers(email);
 
--- Non-Unique Index cho phone
+
 CREATE INDEX idx_customers_phone
 ON customers(phone);
